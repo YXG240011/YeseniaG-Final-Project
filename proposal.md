@@ -1,7 +1,7 @@
 # Art Generator
 
 ## Repository
-<Link to your project's public GitHub respository>
+<[Link to your project's public GitHub respository](https://github.com/YXG240011/YeseniaG-Final-Project.git)>
 
 ## Description
 This will give you a series of questions which you will answer. Based on the responses you give in the quiz-like questionnaire, you will get an artwork based on your responses.
