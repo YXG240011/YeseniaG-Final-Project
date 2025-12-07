@@ -92,20 +92,32 @@ def end_screen(drawing):
 
 def button_function1():
     #function stuffs
-    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "67", button_function3), Button(500,300,200,80, (0,200,200), (200,255,0), "69", button_function2))
+    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "brainrot!!", button_function3), Button(500,300,200,80, (0,200,200), (200,255,0), "No brainrot.", button_function5))
 
 def button_function2():
     #function stuffs
-    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "420", button_function1), Button(500,300,200,80, (0,200,200), (200,255,0), "430", button_function2))
+    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "look at sky", button_function6), Button(500,300,200,80, (0,200,200), (200,255,0), "look at sea", button_function7))
 
 
 def button_function3():
+    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "67", button_function4), Button(500,300,200,80, (0,200,200), (200,255,0), "Among Us", button_function4))
+
+def button_function4():
     end_screen(drawing1)
+
+def button_function5():
+    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "watch movies", button_function4), Button(500,300,200,80, (0,200,200), (200,255,0), "play games", button_function4))
+
+def button_function6():
+    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "see the sun", button_function4), Button(500,300,200,80, (0,200,200), (200,255,0), "see the moon", button_function4))
+
+def button_function7():
+    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "see a turtle", button_function4), Button(500,300,200,80, (0,200,200), (200,255,0), "see a jellyfish", button_function4))
 
 def drawing1():
     
 
-    turtle.exitonclick()
+    turtle.done()
 
 def main():
         
