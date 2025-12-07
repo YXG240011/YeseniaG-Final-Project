@@ -1,5 +1,4 @@
 import pygame
-import random
 
 
 class Particle():
@@ -11,6 +10,7 @@ class Particle():
         
 class Button():
     def __init__(self, x, y, width, height, color, color2, text, action):
+        pygame.font.init()
         self.rect = pygame.Rect(x, y, width, height)
         self.text = text
         self.action = action
@@ -34,21 +34,17 @@ class Button():
         elif event.type == pygame.MOUSEBUTTONDOWN:
             if self.rect.collidepoint(event.pos):
                 self.action()
+            
 
-def button_function():
-    #function stuffs
-
-    return 0
-
-def main():
+def create_screen(button1, button2):
     pygame.init()
     pygame.display.set_caption("Art Quiz")
     resolution = (800, 600)
     screen = pygame.display.set_mode(resolution)
 
     # creates button
-    button1 = Button(100,300,200,80, (255,0,200), (175,0,255), "go online", button_function)
-    button2 = Button(500,300,200,80, (0,200,200), (200,255,0), "touch grass", button_function)
+    buttonA = button1
+    buttonB = button2
     
     particle = Particle()
     print(particle.pos)
@@ -64,14 +60,14 @@ def main():
                 running = False
 
             # button events
-            button1.handle_event(event)
-            button2.handle_event(event)
+            buttonA.handle_event(event)
+            buttonB.handle_event(event)
 
         screen.fill('lavender')
 
         # draw button
-        button1.draw(screen)
-        button2.draw(screen)
+        buttonA.draw(screen)
+        buttonB.draw(screen)
 
         # would you rather
         text_surface = font.render("Would You Rather", True, (0,0,0))
@@ -84,6 +80,49 @@ def main():
 
         pygame.display.flip()
     pygame.quit()
+
+def end_screen(drawing):
+    pygame.init()
+    pygame.display.set_caption("Art Quiz")
+    resolution = (800, 600)
+    screen = pygame.display.set_mode(resolution)
+
+    particle = Particle()
+    print(particle.pos)
+    print(particle.size)
+    print(particle.color)
+
+    font = pygame.font.SysFont("Arial", 48) 
+
+    running = True
+    while running:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
+        
+        drawing()
+
+        screen.fill('lavender')
+
+        pygame.display.flip()
+    pygame.quit()
+
+def button_function1():
+    #function stuffs
+    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "67", button_function1), Button(500,300,200,80, (0,200,200), (200,255,0), "69", button_function2))
+
+def button_function2():
+    #function stuffs
+
+    return 0
+
+def drawing1():
+    # first drawing
+
+    return 0
+
+def main():
+    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "go online", button_function1), Button(500,300,200,80, (0,200,200), (200,255,0), "touch grass", button_function2))
     
 
 if __name__ == "__main__":
