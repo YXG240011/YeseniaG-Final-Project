@@ -1,5 +1,6 @@
 import pygame
-
+import sys
+import turtle
 
 class Particle():
 
@@ -82,48 +83,33 @@ def create_screen(button1, button2):
     pygame.quit()
 
 def end_screen(drawing):
-    pygame.init()
-    pygame.display.set_caption("Art Quiz")
-    resolution = (800, 600)
-    screen = pygame.display.set_mode(resolution)
-
-    particle = Particle()
-    print(particle.pos)
-    print(particle.size)
-    print(particle.color)
-
-    font = pygame.font.SysFont("Arial", 48) 
-
-    running = True
-    while running:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                running = False
-        
-        drawing()
-
-        screen.fill('lavender')
-
-        pygame.display.flip()
+    
     pygame.quit()
+
+    drawing()
+
+    sys.exit()
 
 def button_function1():
     #function stuffs
-    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "67", button_function1), Button(500,300,200,80, (0,200,200), (200,255,0), "69", button_function2))
+    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "67", button_function3), Button(500,300,200,80, (0,200,200), (200,255,0), "69", button_function2))
 
 def button_function2():
     #function stuffs
+    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "420", button_function1), Button(500,300,200,80, (0,200,200), (200,255,0), "430", button_function2))
 
-    return 0
+
+def button_function3():
+    end_screen(drawing1)
 
 def drawing1():
-    # first drawing
+    
 
-    return 0
+    turtle.exitonclick()
 
 def main():
+        
     create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "go online", button_function1), Button(500,300,200,80, (0,200,200), (200,255,0), "touch grass", button_function2))
-    
 
 if __name__ == "__main__":
     main()
