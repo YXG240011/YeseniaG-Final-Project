@@ -45,21 +45,38 @@ def main():
     pygame.display.set_caption("Art Quiz")
     resolution = (800, 600)
     screen = pygame.display.set_mode(resolution)
-    button = Button(100,100,100,50, (255,0,200), (200,0,255), "67", button_function)
+
+    # creates button
+    button1 = Button(100,300,200,80, (255,0,200), (175,0,255), "67", button_function)
+    button2 = Button(500,300,200,80, (0,200,200), (200,255,0), "69", button_function)
+    
     particle = Particle()
     print(particle.pos)
     print(particle.size)
     print(particle.color)
+
+    font = pygame.font.SysFont("Arial", 48) 
 
     running = True
     while running:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
-            button.handle_event(event)
-        screen.fill('lavender')
-        button.draw(screen)
 
+            # button events
+            button1.handle_event(event)
+            button2.handle_event(event)
+
+        screen.fill('lavender')
+
+        # draw button
+        button1.draw(screen)
+        button2.draw(screen)
+
+        # would you rather
+        text_surface = font.render("Would You Rather", True, (0,0,0)) # Render white text with anti-aliasing
+
+        screen.blit(text_surface, (250, 100))
 
         pygame.display.flip()
     pygame.quit()
