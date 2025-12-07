@@ -47,8 +47,8 @@ def main():
     screen = pygame.display.set_mode(resolution)
 
     # creates button
-    button1 = Button(100,300,200,80, (255,0,200), (175,0,255), "67", button_function)
-    button2 = Button(500,300,200,80, (0,200,200), (200,255,0), "69", button_function)
+    button1 = Button(100,300,200,80, (255,0,200), (175,0,255), "go online", button_function)
+    button2 = Button(500,300,200,80, (0,200,200), (200,255,0), "touch grass", button_function)
     
     particle = Particle()
     print(particle.pos)
@@ -74,9 +74,13 @@ def main():
         button2.draw(screen)
 
         # would you rather
-        text_surface = font.render("Would You Rather", True, (0,0,0)) # Render white text with anti-aliasing
+        text_surface = font.render("Would You Rather", True, (0,0,0))
 
         screen.blit(text_surface, (250, 100))
+
+        text_surface = font.render("or", True, (0,0,0))
+
+        screen.blit(text_surface, (380, 310))
 
         pygame.display.flip()
     pygame.quit()
