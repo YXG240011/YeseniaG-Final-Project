@@ -106,7 +106,7 @@ def button_function4():
     end_screen(drawing1)
 
 def button_function5():
-    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "watch movies", button_function9), Button(500,300,200,80, (0,200,200), (200,255,0), "play games", button_function4))
+    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "watch movies", button_function9), Button(500,300,200,80, (0,200,200), (200,255,0), "play games", button_function10))
 
 def button_function6():
     create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "see the sun", button_function4), Button(500,300,200,80, (0,200,200), (200,255,0), "see the moon", button_function4))
@@ -119,6 +119,10 @@ def button_function8():
 
 def button_function9():
     end_screen(drawing3)
+
+def button_function10():
+    end_screen(drawing4)
+
 
 def drawing1():
     screen = turtle.Screen()
@@ -302,6 +306,83 @@ def drawing3():
 
 
 
+
+    turtle.done()
+
+def drawing4():
+    screen = turtle.Screen()
+    screen.bgcolor('maroon')
+    pen = turtle.Turtle()
+    pen.speed(5)
+    pen.pencolor('white')
+    pen.hideturtle()
+#controller
+    pen.penup()
+    pen.goto(-300,-150)
+    pen.pendown()
+
+    pen.forward(600)
+    pen.left(90)
+    pen.forward(300)
+    pen.left(90)
+    pen.forward(600)
+    pen.left(90)
+    pen.forward(300)
+#buttons
+    pen.penup()
+    pen.goto(75,-100)
+    pen.pendown()
+
+    pen.left(270)
+    pen.forward(150)
+    pen.left(90)
+    pen.forward(-50)
+    pen.left(90)
+    pen.forward(150)
+    pen.left(90)
+    pen.forward(-50)
+
+    pen.penup()
+    pen.goto(50,-85)
+    pen.pendown()
+
+    pen.left(90)
+    pen.forward(40)
+    pen.left(270)
+    pen.forward(10)
+    pen.left(90)
+    pen.forward(-40)
+    pen.left(90)
+    pen.forward(10)
+
+    pen.penup()
+    pen.goto(-10,-85)
+    pen.pendown()
+
+    pen.left(90)
+    pen.forward(-40)
+    pen.left(270)
+    pen.forward(-10)
+    pen.left(90)
+    pen.forward(40)
+    pen.left(90)
+    pen.forward(-10)
+#circle buttons
+    turtle.penup()
+    turtle.speed(5)
+    turtle.color('white')
+    turtle.hideturtle()
+    turtle.setposition(140,-100)
+    turtle.pendown()
+    turtle.circle(30)
+    turtle.penup()
+
+    turtle.setposition(230,-100)
+    turtle.pendown()
+    turtle.circle(30)
+    turtle.penup()
+#directional buttons
+    
 
     turtle.done()
 
