@@ -115,6 +115,38 @@ def button_function7():
     create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "see a turtle", button_function4), Button(500,300,200,80, (0,200,200), (200,255,0), "see a jellyfish", button_function4))
 
 def drawing1():
+    screen = turtle.Screen()
+    screen.bgcolor('teal')
+    pen = turtle.Turtle()
+    pen.speed(5)
+    pen.pencolor('yellow')
+    pen.hideturtle()
+
+    pen.penup()
+    pen.goto(-200,300)
+    pen.pendown()
+
+#outside of 6
+    pen.left(180)
+    pen.forward(250)
+    pen.left(90)
+    pen.forward(400)
+    pen.left(90)
+    pen.forward(250)
+    pen.left(90)
+    pen.forward(200)
+    pen.left(90)
+    pen.forward(175)
+    pen.left(90)
+    pen.forward(-125)
+    pen.left(90)
+    pen.forward(175)
+    pen.left(90)
+    pen.forward(75)
+
+#inside of 6
+    pen.penup
+    
     
 
     turtle.done()
