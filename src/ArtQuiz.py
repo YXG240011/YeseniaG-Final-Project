@@ -106,13 +106,13 @@ def button_function4():
     end_screen(drawing1)
 
 def button_function5():
-    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "watch movies", button_function9), Button(500,300,200,80, (0,200,200), (200,255,0), "play games", button_function10))
+    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "watch some movies", button_function9), Button(500,300,200,80, (0,200,200), (200,255,0), "play some games", button_function10))
 
 def button_function6():
     create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "be an early bird", button_function11), Button(500,300,200,80, (0,200,200), (200,255,0), "be a night owl", button_function12))
 
 def button_function7():
-    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "see a turtle", button_function4), Button(500,300,200,80, (0,200,200), (200,255,0), "see a jellyfish", button_function4))
+    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "explore shallow waters", button_function13), Button(500,300,200,80, (0,200,200), (200,255,0), "explore deep waters", button_function4))
 
 def button_function8():
     end_screen(drawing2)
@@ -128,6 +128,10 @@ def button_function11():
 
 def button_function12():
     end_screen(drawing6)
+
+def button_function13():
+    end_screen(drawing7)
+
 
 
 def drawing1():
@@ -510,6 +514,67 @@ def drawing6():
 
     turtle.done()
 
+def drawing7():
+    screen = turtle.Screen()
+    screen.bgcolor('light blue')
+    pen = turtle.Turtle()
+    pen.shape('turtle')
+    pen.width(3)
+    pen.speed(5)
+    pen.pencolor('green')
+#Turtle
+    pen.penup()
+    pen.goto(-400,0)
+    pen.pendown()
+
+    pen.forward(600)
+    pen.left(90)
+    pen.forward(300)
+    pen.left(90)
+    pen.forward(600)
+    pen.left(90)
+    pen.forward(300)
+    pen.penup()
+
+    pen.goto(-375,0)
+    pen.pendown()
+    pen.forward(150)
+    pen.left(90)
+    pen.forward(125)
+    pen.left(90)
+    pen.forward(25)
+    pen.left(90)
+    pen.forward(25)
+    pen.left(270)
+    pen.forward(125)
+    pen.penup()
+
+    pen.goto(75,0)
+    pen.pendown()
+    pen.left(180)
+    pen.forward(150)
+    pen.left(90)
+    pen.forward(125)
+    pen.left(90)
+    pen.forward(25)
+    pen.left(90)
+    pen.forward(25)
+    pen.left(270)
+    pen.forward(125)
+    pen.left(270)
+    pen.forward(100)
+    pen.left(270)
+    pen.forward(75)
+    pen.left(90)
+    pen.forward(150)
+    pen.left(90)
+    pen.forward(150)
+    pen.left(90)
+    pen.forward(225)
+#shell details
+
+
+    turtle.done()
 
 def main():
         
