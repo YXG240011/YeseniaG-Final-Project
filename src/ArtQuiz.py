@@ -100,7 +100,7 @@ def button_function2():
 
 
 def button_function3():
-    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "67", button_function4), Button(500,300,200,80, (0,200,200), (200,255,0), "Among Us", button_function4))
+    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "2025 brainrot", button_function4), Button(500,300,200,80, (0,200,200), (200,255,0), "2020 brainrot", button_function8))
 
 def button_function4():
     end_screen(drawing1)
@@ -113,6 +113,9 @@ def button_function6():
 
 def button_function7():
     create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "see a turtle", button_function4), Button(500,300,200,80, (0,200,200), (200,255,0), "see a jellyfish", button_function4))
+
+def button_function8():
+    end_screen(drawing2)
 
 def drawing1():
     screen = turtle.Screen()
@@ -176,10 +179,33 @@ def drawing1():
     pen.left(90)
     pen.forward(-75)
 
-    
+    turtle.done()
+
+def drawing2():
+    screen = turtle.Screen()
+    screen.bgcolor('yellow')
+    pen = turtle.Turtle()
+    pen.speed(5)
+    pen.pencolor('red')
+    pen.hideturtle()
+
+    pen.penup()
+    pen.goto(50,100)
+    pen.pendown()
+#amogus visor
+    pen.forward(150)
+    pen.left(90)
+    pen.forward(75)
+    pen.left(90)
+    pen.forward(150)
+    pen.left(90)
+    pen.forward(75)
+
+    pen.penup()
     
 
     turtle.done()
+
 
 def main():
         
