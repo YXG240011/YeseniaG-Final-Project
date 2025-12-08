@@ -106,7 +106,7 @@ def button_function4():
     end_screen(drawing1)
 
 def button_function5():
-    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "watch movies", button_function4), Button(500,300,200,80, (0,200,200), (200,255,0), "play games", button_function4))
+    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "watch movies", button_function9), Button(500,300,200,80, (0,200,200), (200,255,0), "play games", button_function4))
 
 def button_function6():
     create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "see the sun", button_function4), Button(500,300,200,80, (0,200,200), (200,255,0), "see the moon", button_function4))
@@ -116,6 +116,9 @@ def button_function7():
 
 def button_function8():
     end_screen(drawing2)
+
+def button_function9():
+    end_screen(drawing3)
 
 def drawing1():
     screen = turtle.Screen()
@@ -202,9 +205,52 @@ def drawing2():
     pen.forward(75)
 
     pen.penup()
-    
+    pen.goto(125,175)
+    pen.pendown()
+#amogus crewmate
+    pen.left(180)
+    pen.forward(75)
+    pen.left(90)
+    pen.forward(175)
+    pen.left(90)
+    pen.forward(300)
+    pen.left(90)
+    pen.forward(100)
+    pen.left(90)
+    pen.forward(75)
+    pen.left(90)
+    pen.forward(-25)
+    pen.left(90)
+    pen.forward(75)
+    pen.left(90)
+    pen.forward(50)
+    pen.left(90)
+    pen.forward(150)
+#amogus backpack
+    pen.penup()
+    pen.goto(-50,137)
+    pen.pendown()
+
+    pen.left(90)
+    pen.forward(50)
+    pen.left(90)
+    pen.forward(100)
+    pen.left(90)
+    pen.forward(50)
 
     turtle.done()
+
+def drawing3():
+    screen = turtle.Screen()
+    screen.bgcolor('black')
+    pen = turtle.Turtle()
+    pen.speed(5)
+    pen.pencolor('white')
+    pen.hideturtle()
+
+    pen.penup()
+    pen.goto(10,0)
+    pen.pendown()
 
 
 def main():
