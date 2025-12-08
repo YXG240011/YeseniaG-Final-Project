@@ -109,7 +109,7 @@ def button_function5():
     create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "watch movies", button_function9), Button(500,300,200,80, (0,200,200), (200,255,0), "play games", button_function10))
 
 def button_function6():
-    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "see the sun", button_function4), Button(500,300,200,80, (0,200,200), (200,255,0), "see the moon", button_function4))
+    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "be an early bird", button_function11), Button(500,300,200,80, (0,200,200), (200,255,0), "be a night owl", button_function12))
 
 def button_function7():
     create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "see a turtle", button_function4), Button(500,300,200,80, (0,200,200), (200,255,0), "see a jellyfish", button_function4))
@@ -122,6 +122,12 @@ def button_function9():
 
 def button_function10():
     end_screen(drawing4)
+
+def button_function11():
+    end_screen(drawing5)
+
+def button_function12():
+    end_screen(drawing6)
 
 
 def drawing1():
@@ -420,6 +426,89 @@ def drawing4():
 
     turtle.done()
 
+def drawing5(): 
+    screen = turtle.Screen()
+    screen.bgcolor('sky blue')   
+#sun  
+    pen = turtle.Turtle()
+    pen.speed(5)
+    pen.pencolor('yellow')
+    pen.hideturtle()
+    pen.width(3)
+    pen.penup()
+    pen.goto(100,200)
+    pen.pendown()
+    pen.goto(200,275)
+    pen.penup()
+
+    
+    pen.goto(0,275)
+    pen.pendown()
+    pen.goto(25,380)
+    pen.penup()
+
+    pen.goto(-225,150)
+    pen.pendown()
+    pen.goto(-350,200)
+    pen.penup()
+
+    pen.goto(-130,-75)
+    pen.pendown()
+    pen.goto(-175,-175)
+    pen.penup()
+
+    pen.goto(100,-0)
+    pen.pendown()
+    pen.goto(175,-100)
+    pen.penup()
+
+    turtle.hideturtle()
+    turtle.width(4)
+    turtle.penup()
+    turtle.speed(5)
+    turtle.color('yellow')
+    turtle.setposition(-50,-50)
+    turtle.pendown()
+    turtle.circle(150)
+    turtle.penup()
+
+    turtle.done()
+
+def drawing6(): 
+    screen = turtle.Screen()
+    screen.bgcolor('dark blue')   
+#moon  
+    turtle.hideturtle()
+    turtle.width(4)
+    turtle.penup()
+    turtle.speed(5)
+    turtle.color('white')
+    turtle.setposition(0,-200)
+    turtle.pendown()
+    turtle.circle(300)
+    turtle.penup()
+
+    turtle.setposition(75,100)
+    turtle.pendown()
+    turtle.circle(75)
+    turtle.penup()
+
+    turtle.setposition(-75,-25)
+    turtle.pendown()
+    turtle.circle(30)
+    turtle.penup()
+
+    turtle.setposition(75,-150)
+    turtle.pendown()
+    turtle.circle(25)
+    turtle.penup()
+
+    turtle.setposition(-150,175)
+    turtle.pendown()
+    turtle.circle(50)
+    turtle.penup()
+
+    turtle.done()
 
 
 def main():
