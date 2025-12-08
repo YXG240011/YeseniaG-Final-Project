@@ -247,10 +247,64 @@ def drawing3():
     pen.speed(5)
     pen.pencolor('white')
     pen.hideturtle()
+#film slate
+    pen.penup()
+    pen.goto(150,-100)
+    pen.pendown()
+
+    pen.forward(-300)
+    pen.left(90)
+    pen.forward(200)
+    pen.goto(-175,150)
+    pen.goto(100,275)
+    pen.goto(130,225)
+    pen.goto(-150,100)
+    pen.goto(150,100) 
+    pen.goto(150,-100)
+#lines on slate
+    pen.penup()
+    pen.goto(100,0)    
+    pen.pendown()
+
+    pen.left(90)
+    pen.forward(200)
 
     pen.penup()
-    pen.goto(10,0)
+    pen.goto(100,50)    
     pen.pendown()
+
+    pen.forward(200)
+
+    pen.penup()
+    pen.goto(100,-50)    
+    pen.pendown()
+
+    pen.forward(200)
+
+    pen.penup()
+    pen.goto(0,-50)    
+    pen.pendown()
+
+    pen.left(90)
+    pen.forward(25)
+
+    pen.penup()
+    pen.goto(60,-50)    
+    pen.pendown()
+
+    pen.forward(25)
+
+    pen.penup()
+    pen.goto(-60,-50)    
+    pen.pendown()
+
+    pen.forward(25)
+
+
+
+
+    turtle.done()
+
 
 
 def main():
