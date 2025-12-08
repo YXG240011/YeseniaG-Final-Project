@@ -145,7 +145,37 @@ def drawing1():
     pen.forward(75)
 
 #inside of 6
-    pen.penup
+    pen.penup()
+    pen.goto(-275,50)
+    pen.pendown()
+
+    pen.left(90)
+    pen.forward(75)
+    pen.left(90)
+    pen.forward(100)
+    pen.left(90)
+    pen.forward(75)
+    pen.left(90)
+    pen.forward(100)
+
+#7
+    pen.penup()
+    pen.goto(200,300)
+    pen.pendown()
+
+    pen.left(90)
+    pen.forward(250)
+    pen.left(90)
+    pen.forward(75)
+    pen.left(90)
+    pen.forward(175)
+    pen.goto(-50,-100)
+    pen.left(180)
+    pen.forward(-75)
+    pen.goto(200,225)
+    pen.left(90)
+    pen.forward(-75)
+
     
     
 
