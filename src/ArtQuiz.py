@@ -112,7 +112,7 @@ def button_function6():
     create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "be an early bird", button_function11), Button(500,300,200,80, (0,200,200), (200,255,0), "be a night owl", button_function12))
 
 def button_function7():
-    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "explore shallow waters", button_function13), Button(500,300,200,80, (0,200,200), (200,255,0), "explore deep waters", button_function4))
+    create_screen(Button(100,300,200,80, (255,0,200), (175,0,255), "explore shallow waters", button_function13), Button(500,300,200,80, (0,200,200), (200,255,0), "explore deep waters", button_function14))
 
 def button_function8():
     end_screen(drawing2)
@@ -131,6 +131,9 @@ def button_function12():
 
 def button_function13():
     end_screen(drawing7)
+
+def button_function14():
+    end_screen(drawing8)
 
 
 
@@ -572,6 +575,54 @@ def drawing7():
     pen.left(90)
     pen.forward(225)
 #shell details
+    pen.penup()
+    pen.goto(-350,200)
+    pen.pendown()
+
+    pen.left(180)
+    pen.forward(475)
+
+    pen.penup()
+    pen.goto(-200,300)
+    pen.pendown()
+
+    pen.left(270)
+    pen.forward(150)
+
+    pen.penup()
+    pen.goto(25,300)
+    pen.pendown()
+
+    pen.forward(150)
+
+    turtle.done()
+
+def drawing8():
+    screen = turtle.Screen()
+    screen.bgcolor('dark blue')
+    turtle.hideturtle()
+    turtle.width(4)
+    turtle.penup()
+    turtle.speed(5)
+    turtle.color('pink')
+    turtle.setposition(100,200)
+    turtle.pendown()
+    turtle.left(90)
+    turtle.circle(200,180)
+    turtle.penup()
+
+    pen = turtle.Turtle()
+    pen.hideturtle()
+    pen.width(4)
+    pen.speed(5)
+    pen.pencolor('pink')
+    pen.penup()
+    pen.goto(100,200)
+    pen.pendown()
+    pen.left(180)
+    pen.forward(400)
+
+#stingers
 
 
     turtle.done()
