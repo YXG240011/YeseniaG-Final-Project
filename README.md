@@ -4,7 +4,7 @@
 Demo Video: <URL>
 
 ## GitHub Repository
-GitHub Repo: <URL>
+GitHub Repo: <https://github.com/YXG240011/YeseniaG-Final-Project.git>
 
 ## Description
 This project is a 'Would You Rather' quiz. It takes you down a series of questions,
